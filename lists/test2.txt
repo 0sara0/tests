@@ -1,0 +1,19 @@
+aList = [10,12,3,5]
+aList = sort (aList) 
+? aList + "------"
+
+alist=["s","r","a"]
+? sort (alist)
+
+
+aList = [ 
+		 ["a",3] ,
+         	 ["c", 4 ] ,
+        	 ["b", 1 ]
+]
+         
+aList2 = sort(aList,1) 
+? aList2
+? "------"
+aList2 = sort(aList,2)
+? aList2

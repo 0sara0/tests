@@ -1,0 +1,21 @@
+alist2 = "a":"d"
+?  alist2 + " ---- " 
+
+del (alist2,3)
+?  alist2 + " ---- " 
+
+alist2[3]="c" 
+?  alist2 + " ---- "
+
+?  alist2[1]  ?  alist2[2] ?  alist2[3] + " ---- "
+
+?  find (alist2,"b") + " ---- "
+
+mylist =[ ["M","A","S"] , ["X","S ",5], ["S",2,1] ]
+?  find (mylist,"S",1)                      
+?  find (mylist,5,3) +  " ---- " 
+
+aList = ["one","two","three","four","five"]
+aList = sort (aList)
+?  binarysearch (aList,"three")
+

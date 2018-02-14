@@ -1,0 +1,15 @@
+Query ([:userName = "Mohamed" , :Degree = 57])
+
+def Query Data
+	
+	? "Degree  :"   + Data[:Degree  ]
+	? "UserName:"   + Data[:UserName]
+	? "Phone   :"   + Data[:Phone   ]
+
+alist1= ["Mohemd"]
+add_Names(alist1)
+? alist1
+
+func add_Names name
+
+	name + "Ahmed"
