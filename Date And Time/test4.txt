@@ -1,0 +1,9 @@
+cDate1 = date()
+
+see cDate1 + nl    
+             
+cDate2 = adddays(cDate1,19)
+
+? "adddays = " + cDate2 
+
+see "DiffDays = " + diffdays(cDate2,cDate1) + nl  
