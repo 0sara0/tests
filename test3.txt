@@ -1,8 +1,0 @@
-? "Date : " +Date()
-? "----------"
-?  "Time : " +Time()
-? "----------"
-?  "Date And Time Information:"
-?  TimeList()
-? "----------"
-? "Day Name : " + TimeList()[2] 
