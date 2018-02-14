@@ -1,0 +1,29 @@
+Result = 0
+see "Enter The First Number Of Operation"
+give num1
+see "Enter The Second Number Of Operation"
+give num2
+
+see "Enter 1 for Division and 2 for Subtraction" + nl
+give choice
+
+switch choice
+	on 1
+		Division(num1,num2)
+		see "Division=" + Result + nl
+	on 2
+		Sub(num1,num2)
+		see "Subtraction=" + Result+nl
+	other
+		see "Please Enter number 1 and 2 only" + nl
+off
+
+func Division num1 , num2
+
+	Result = num1 / num2
+	Return Result
+
+func Sub num1 , num2
+
+	Result = num1 - num2
+	Return Result

@@ -1,0 +1,25 @@
+x = 0	y = 0
+
+if (x = 0 and y=1) and (x =0 and y=0)
+
+	see " First condition " + nl
+	see "-----------" + nl
+
+but (x = 0 and y=0) and (x =0 and y=0)
+
+	see " Second condition " + nl
+	see"-----------" + nl
+
+	if (x = 0 and y=1) or (x =0 and y=0)
+		see " Third condition in second condition " + nl
+		see"-----------" + nl
+	ok
+
+	if (x = 0 and 5 ) or (y = 10 and 8 )
+	see "great" + nl
+	ok
+
+else 
+	see "bad evaluation" + nl
+
+ok

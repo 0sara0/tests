@@ -1,0 +1,28 @@
+aList = duplicate( [1,2,3,4,5] )
+
+For X in alist Step 2
+
+	if X=alist[4]
+		X="Four " + nl
+	
+		For char in X
+			See char+nl
+		next
+	ok
+	see X + nl
+
+next
+
+see "----------------" + nl
+see aList[9] + nl
+see aList[6] + nl
+see aList[3] + nl
+
+func duplicate list
+
+	nMax = len(list)
+	for x = 1 to nMax
+
+		list + list[x]
+	next
+	return list

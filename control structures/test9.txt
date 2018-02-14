@@ -1,0 +1,28 @@
+for x = 1 to 5
+
+	for y = 1 to 5
+	
+		for z=1 to 5
+		
+			see "x=" + x + " y=" + y + "z=" + z + nl
+			if x = 2 and y = 3 and z = 1
+				exit 3
+			ok
+		
+		next
+	next
+
+next
+
+for x = 1 to 10
+	ignore(x)
+	see x + nl
+next
+
+see "---------" + nl
+
+func ignore x
+
+	if x = 5
+		Exit
+	ok

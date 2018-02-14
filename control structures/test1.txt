@@ -1,0 +1,13 @@
+see " Please Enter The Hours now
+it must be from 1:24
+" + nl
+give hour
+
+if hour<18
+
+	See"Good Day"+nl
+else
+
+	see " Good Evening " + nl
+
+ok

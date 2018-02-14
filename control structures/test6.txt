@@ -1,0 +1,11 @@
+x = 20
+
+for t = 1 to 5
+	mycounter()
+next
+
+Func mycounter
+
+	see x + nl
+	x = x-5
+

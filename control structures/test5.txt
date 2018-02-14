@@ -1,0 +1,11 @@
+for even_numbers = 0 to 10 step 2
+	see even_numbers+nl
+next
+
+see "------------" + nl
+see "Enter the number you want its multiplication table:"
+give num
+
+for counter = 1 to 11
+	see num + "X" + counter +"=" + (num*counter) + nl
+next
