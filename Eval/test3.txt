@@ -1,0 +1,19 @@
+Eval ( '
+	alist=list(5)
+	nMax=len(alist)
+
+	for x = 1 to nMax
+		see"Enter number"+x+nl
+		give num
+		alist[x] =[num]
+	next
+
+	see "the items are"+nl
+	see alist + "----------"
+' )
+
+Eval ( "
+	message('Ring')
+	func message name
+	see 'Hello ' + name
+" )

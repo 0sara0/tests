@@ -1,0 +1,11 @@
+Try
+
+	see fact(5)
+Catch
+
+	see "Catch!" + nl + cCatchError
+Done
+
+func fact x
+
+	return x * fact(x-1)
