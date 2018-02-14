@@ -1,0 +1,24 @@
+#Pure Functions
+
+func main
+
+alist3=[123,123]
+
+alist4= login(alist3)+nl
+
+? alist3
+
+? alist4
+
+func  login  alist1
+
+	? "Hello in TE Data  company"
+
+	alist2=alist1
+
+	? "user name:"	Give  name
+	? "password:"		Give password
+
+	alist2=[name,password]
+
+	return alist2

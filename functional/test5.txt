@@ -1,0 +1,26 @@
+#Equality of functions
+func main
+				f1=func  $name,pass{	 								
+ 								alist=[$name,pass]
+ 								? alist
+ 				}
+
+				f2=func  $name,pass{	 								
+ 								alist=[$name,pass]
+ 								? alist
+				}
+	
+				f3=func  $name,pass{	 								
+ 								alist=[$name,pass]
+ 								? alist
+				}
+
+
+call f1("123","123")
+call f2("admin","admin")
+call f3("123","123")
+
+f1=f2
+
+? (f1=f2)+nl
+? (f1=f3)+nl

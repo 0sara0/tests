@@ -1,0 +1,30 @@
+#first-class
+func main
+	? "Hello in TE Data  company"
+	? "	user name:"	Give  name
+	? "password:"		Give password
+	if name and password="admin"
+	f=login(:page)
+	else	
+			? "Error"
+			bye
+	ok
+
+func  page
+	?"
+	[1] Device Information
+ 	[2] Network Interface
+ 	[3] WAN Connection
+ 	[4] ADSL
+ 	[5] User Interface
+ 	[6] Quick Setup
+ 	[7] Network
+ 	[8] Security
+ 	[9] Application
+ 	[10] Administration
+	"
+func  login  func2
+
+	call func2()
+		
+	Return  func2

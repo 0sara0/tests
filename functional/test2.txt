@@ -1,0 +1,30 @@
+func main
+
+	f=login(:page,[123,123])
+
+func  page
+	? "
+	[1] Device Information
+ 	[2] Network Interface
+ 	[3] WAN Connection
+ 	[4] ADSL
+ 	[5] User Interface
+ 	[6] Quick Setup
+ 	[7] Network
+ 	[8] Security
+ 	[9] Application
+ 	[10] Administration
+	"
+func  login  func2,alist2
+	? "Hello in TE Data  company"
+	? "user name:"	Give  name
+	? "password:"		Give password
+	alist1=[name,password]
+
+	if (alist1[1]=alist2[1]) and (alist1[2]=alist2[2]) 
+
+		call func2()
+	else	
+			? "Error"
+	ok		
+	Return  func2
