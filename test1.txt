@@ -1,0 +1,15 @@
+see clock()+nl
+see copy(".",10)+nl
+
+Ring="Ring is portable" 
+
+see clock()+nl
+see copy(".",10)+nl
+
+max=len(Ring)
+for x =1 to max  
+	see x+nl
+next
+
+see copy(".",10)+nl
+see clock()
