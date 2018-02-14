@@ -1,0 +1,10 @@
+? "Clocks:" + clock() 
+? copy("." , 10)
+
+? "ClocksPerSecond:"+ClocksPerSecond()
+? copy("." , 10)
+
+while ( clock() <= clockspersecond() )
+end
+
+? nl + "Hello in learning Ring lang."+nl
