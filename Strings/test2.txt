@@ -1,0 +1,14 @@
+cStr = " Hello Word? "
+see cStr + nl
+see "String size : " + len (cStr) + nl+"====="+nl
+
+
+cStr = "Welcome To The Ring Programming "
+see cStr +"====="+ nl + upper (cStr)+ 
+nl +"====="+nl+ lower (cStr)+nl+"====="+nl
+
+cStr="ring"
+see Upper(cStr[1])+nl
+see cStr[2]+nl
+see cStr[3]+nl
+see cStr[4]+nl

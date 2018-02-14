@@ -1,0 +1,10 @@
+cStr= 'left function'
+see left(cStr,4)+nl
+
+
+cStr= 'Right function'
+see right(cStr,8)+nl
+
+cStr="    Hello    "
+see cStr+nl
+see trim(cStr)+nl

@@ -1,0 +1,13 @@
+cString="also we can use ' '  and ` ` for string "
+? cString + "------------"
+
+cString='also we can use " " and  ` `  for string  '
+? cString + "------------"
+ 
+
+cString=` we can use " "  and ' '  inside this method `
+? cString + "------------"
+
+cString=  :the_words_after_this_operator_must_be_one_word_no_distance
+? cString + "------------"
+

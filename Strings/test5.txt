@@ -1,0 +1,33 @@
+cStr = "Welcome to the Ring programming language"
+see strcmp("Ring programming","Ring programming")+nl
+see strcmp("Ring","Python")+nl
+see strcmp("Ring","Ruby")+nl
+see"-------"+nl
+
+mystr = "Hello
+How are you ?
+are you fine ?
+ok"
+
+mylist = str2list(mystr)
+insert(mylist,3,"Yes I am Fine")
+see mylist+nl
+see"------"+nl
+
+insert(mylist,4,"Thanks")
+see mylist+nl
+see"------"+nl
+
+mylist2 = list2str(mylist)
+see substr(mylist2,"Hello")
+
+
+
+cStr="*How Are You*"
+see copy(cStr,2)+nl
+
+cStr="it is a string literals,
+ it is nice lesson
+I wish interesting
+see you"
+see lines(cStr)

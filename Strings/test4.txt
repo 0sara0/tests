@@ -1,0 +1,24 @@
+cStr = "Welcome to the Ring programming language"
+see substr(cStr,"Ring programming")+nl
+see"----------"+nl
+
+cStr="string literals"
+see substr(cStr,1)+nl
+see substr(cStr,2)+nl
+see substr(cStr,"l")+nl
+see substr(cStr,8)+nl
+see"----------"+nl
+
+cStr="The Ring is an Innovative and practical general-purpose"
+nPosition=substr(cStr,"R")
+see substr(cStr,nPosition,4)+nl
+see"----------"+nl
+
+cStr="The language is designed to be Simple,Flexible."
+new_1=substr(cStr,"Simple,Flexible","Small" )+nl
+see new_1
+new_2=substr(cStr,"Language","Ring",1 )+nl
+nPosition1=substr(new_2 ,"S" )
+nPosition2=substr(new_2 ,"s" )
+see substr(new_2 ,1, nPosition1 )+nl
+see substr(new_2 ,1, nPosition2 )+nl
