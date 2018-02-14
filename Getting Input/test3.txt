@@ -1,0 +1,3 @@
+? "Enter the first number : " Give nNum1
+? "Enter the second number : " Give nNum2
+? "Sum : " + ( 0 + nNum1 + nNum2 )

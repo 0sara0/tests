@@ -1,0 +1,9 @@
+? "Enter the first number : "
+
+nNum1 = GetChar() GetChar() GetChar()
+
+? "Enter the second number : "
+
+nNum2 = GetChar() GetChar() GetChar()
+
+? "Sum = " + ( 0 + nNum1 + nNum2 )

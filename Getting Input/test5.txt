@@ -1,0 +1,5 @@
+? "Enter data only of size 15 (char)"
+
+data=input(15)
+
+?  "the characters are: " + data

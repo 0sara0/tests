@@ -1,0 +1,17 @@
+While True
+	Option    = GetChar()
+	if Option = 1
+
+		GetChar() GetChar()
+		? "Enter your First name : " give cName
+		? "Hello " + cName
+
+	but Option = 25
+
+		GetChar() GetChar()
+		? "Enter your Last name : " give cName
+		? "Hello " + cName
+	else
+		bye
+	ok
+End
