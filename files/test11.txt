@@ -1,11 +1,14 @@
 fp=fopen("s.txt","r+")
 
-fseek(fp,0,0)                                   
-chars=fgets(fp,20)                             
-see chars+nl
+fseek(fp,2,0)  
 
-fseek(fp,0,2)                                  
+for x= 1 to 5
+    chars=fgets(fp,200)                             
+    see chars+nl
+next
+
+fseek(fp,1,2)                                  
 see fputs(fp,"the end of file")                 
 
-fseek(fp,0,0)                                   
+fseek(fp,0,1)                                   
 see fputs(fp,"the beginning of file ") 
