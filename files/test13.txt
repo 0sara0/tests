@@ -1,5 +1,5 @@
 fp = fopen("File.txt","r+")
-	ungetc(fp,"*")+nl      #Êﬁ—«¡ Â buffer ·Õ›Ÿ «·Õ—› ›Ì
+	ungetc(fp,"*")+nl     
 	see fread(fp,50)+nl
 	fclose(fp)
 	
