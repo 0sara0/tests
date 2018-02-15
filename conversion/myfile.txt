@@ -1,0 +1,29 @@
+Load "Conversionfile.ring"
+
+? "Choose the number of conversions "+ nl + "the number is: "
+Give Choice
+
+? "Please Enter your data" 	Give Data 
+
+switch Choice
+
+	on 1 
+		Data=0+Data
+		x1= Char(Data)
+		See "The Number In character = "+x1
+	on 2 
+		x2=Ascii(Data)
+		See "The Number In ASCII= "+x2
+	on 3 
+		x3=Dec(Data)
+		See "The Number In Decimal= "+x3
+	on 4
+		x4=Hex(0+Data)
+		See "The Number In Hexadecimal= "+x4
+	on 5
+		x5=Str2hex(Data)
+		See "The Number In Hexadecimal= "+x5
+	on 6 
+		x6=Hex2Str(Data)
+		See "String is= "+x6
+off

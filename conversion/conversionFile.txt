@@ -1,0 +1,10 @@
+? "Conversions Functions"
+
+see"
+	1 -->Asci to character        ==> Char(Asci)
+	2 -->character to Ascii       ==> Ascii(Char)
+	3 -->Hex to Decimal           ==> Dec(Hexadecimal)
+	4 -->Decimal to Hex           ==> Hex(decimal)
+	5 -->String to Hex            ==> Str2hex()
+	6 -->Hex to String            ==> Hex2Str()  
+"
