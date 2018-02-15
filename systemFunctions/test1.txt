@@ -1,0 +1,4 @@
+See system ("help")
+See system ("ver")
+See system ("dir")
+See system ("cmd.exe")

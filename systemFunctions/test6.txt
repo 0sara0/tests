@@ -1,0 +1,13 @@
+see "Enter Password: "+nl
+Give Password
+
+see "Command Line Parameters" + nl
+see "Size : " + Len(sysargv) + nl
+
+if strcmp( (sysargv[3]) ,Password )=0
+	see "Access Permitted" 
+	see "The name is: "+sysargv[4]
+
+else 
+	see "Access denied"
+ok

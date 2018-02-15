@@ -1,0 +1,5 @@
+Fp=fopen ("newFile.txt","w+")
+Fputs    (fp,"Hello")
+Fputs    (fp, windowsnl ())
+Fputs    (fp,"How are you")
+Fclose   (fp)
