@@ -1,0 +1,9 @@
+See "Ceil(1.12)  = " + Ceil(1.12) + nl
+See "Ceil(1.72)  = " + Ceil(1.72) + nl
+See "Floor(1.12) = " + floor(1.12) + nl
+See "Floor(1.72) = " + floor(1.72) + nl
+See "fabs(1.12)  = " + fabs(1.12) + nl
+See "fabs(1.72)  = " + fabs(1.72) + nl
+See "fabs(-1.9)  = " + fabs(-1.9) + nl
+See "pow(2,3)    = " + pow(2,3) + nl
+see "sqrt(16)    = " + sqrt(16) + nl

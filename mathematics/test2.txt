@@ -1,0 +1,7 @@
+See "exp(0)    = " + exp(0) + nl
+See "exp(1)    = " + exp(1) + nl
+See "log(1)    = " + log(1) + nl
+See "log(2)    = " + log(2) + nl
+See "log10(1)  = " + log10(1) + nl
+See "log10(2)  = " + log10(2) + nl
+See "log10(10) = " + log10(10) + nl

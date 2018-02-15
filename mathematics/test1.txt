@@ -1,0 +1,42 @@
+	 ?"1-sin(x)"+nl+	"2-cos(x) 	"+nl+	"3-tan(x)"+nl  +"4-asin(x)"+nl+
+	 "5-acos(x)"+nl+	"6-atan(x)	"+nl+"7-atan2(y,x)"+nl +"8-sinh(x)"+nl+ 
+	 "9-cosh(x)"+nl+	"10-tanh(x)"
+
+
+
+while true
+	see "please choose the number of operation
+	the number:"+nl		give nOption
+	
+	if nOption=7
+		see "Enter the value of y "+nl   Give y  see "Enter the value of x "+nl   Give x
+		val1=0+y
+		val2=0+x
+		See "atan2 (" +y+ "," + x+ ")=" +atan2(val1,val2 ) + nl
+	else
+		see "Enter the value of x"+nl Give angle
+		angle=0+angle
+
+		switch nOption
+			on 1
+				See "Sin " + angle+ "=" + sin(angle) + nl
+			on 2
+				See "cos " + angle+ "=" + cos(angle) + nl
+			on 3
+				See "tan " + angle+ "=" + tan(angle) + nl
+			on 4
+				See "aSin " + angle+ "=" + asin(angle) + nl
+			on 5
+				See "acos " + angle+ "=" + acos(angle) + nl
+			on 6
+				See "atan " + angle+ "=" + atan(angle) + nl
+			on 8
+				See "Sinh " + angle+ "=" + sinh(angle) + nl
+			on 9
+				See "cosh " + angle+ "=" + cosh(angle) + nl
+			on 10
+				See "tanh " + angle+ "=" + tanh(angle) + nl
+		off
+	ok
+
+end

@@ -1,0 +1,15 @@
+x = 1.1234567890123
+decimals(2) see x+nl
+decimals(5) see x+nl
+
+see"============"+nl
+
+for x = 1 to 5
+	see "Random number : " + random() + nl +
+	"Random number Max (100) : " + random(10) + nl
+next
+
+see "============"+nl
+
+see unsigned(3,unsigned(2,3,"*"),"^")+nl
+see unsigned(4,unsigned(2,3,"<<"),"*")+nl
