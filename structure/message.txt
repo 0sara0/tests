@@ -1,0 +1,21 @@
+
+Class CardOfSuccess
+
+	func message
+
+		fp= fopen("registration.txt","w+")
+		
+		         fwrite(fp,name)  fputc(fp,nl)
+		         fwrite(fp,ID)    fputc(fp,nl)
+		         fwrite(fp,phone) fputc(fp,nl)
+		         fwrite(fp,Email) fputc(fp,nl)
+		         fputs(fp,"date:25-7-2017") fputc(fp,nl)
+		         fputs(fp,"Visa Number: 8765940321") fputc(fp,nl)
+		         fputs(fp,"Enquiry No. :453627890") fputc(fp,nl)
+		
+		     fclose(fp)
+		
+			See "Congratulations!!!!! "+nl
+			See " good luck, your are win ! :" +nl
+			See " your Journey Information :" +nl
+			See Read("registration.txt")

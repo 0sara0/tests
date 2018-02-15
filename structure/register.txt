@@ -1,0 +1,51 @@
+# author 	:Sara Hamdy
+#Application    :load files 
+
+/*
+we have a file contains class and method()-- it is message()
+we load that file in this file and add object that 
+contains that method 
+# it depands on a file contains message for people who success
+# and this file to register and try your luck by random numbers 0,1
+*/
+
+Load "message.ring"
+
+alist1=[]
+Tab = char(9) + char(9)
+While(True)
+            for x=1 to 5
+                 ? Tab + " 
+				Hello in the Journey to  America 
+                	   	follow the next steps below  and look at  Your luck 
+			 "
+		? "name  : " Give name
+		? "ID	 : " Give ID
+		? "Phone : " Give Phone
+		? "E-mail: " Give Email
+
+                if (Find(alist1,ID,2) =0 )     #search ID in the secodn columns
+                              alist1=[:name=name,:ID=ID,:phone=phone,:Email=Email]
+                              See copy("*",50)+nl
+                              See  "Your_number is : "  +x +nl 
+                              see  "Thanks for your registration"+nl
+                              nrandom= random(1)
+                              If  nrandom=X
+
+					New CardOfSuccess { message() }
+
+                              Else
+                                    ? "oh Sorry! the random number is: "+ nrandom
+                              Ok    
+                             		
+                 else
+                		See "You are forbidden"+nl  exit
+               			 
+               	    		
+               			  
+                 ok
+                
+           next
+
+end
+
