@@ -1,0 +1,27 @@
+f=fopen("file1.txt","r")        #read only when the file is found
+see fread(f,50)			#read  50 char from file
+see fwrite(f,"Hello in")	#can not write in "r"
+
+f=fopen("file2.txt","r+")       #read and write
+see fread(f,50)			#read  50 char from file
+see fwrite(f,"Hello in")	#write directly after the last word of file
+#========================
+
+f=fopen("file3.txt","w")        #write after clear the file
+see fread(f,50)			#can not read
+see fwrite(f,"Hello in")	#write after clear the file
+
+f=fopen("file4.txt","w+")       #create and write  after clear the file         
+see fread(f,50)			#can not read
+#========================
+
+f=fopen("file5.txt","a")        #create and write directly after the last word of file 
+see fwrite(f,"Hello in")	#write directly after the last word of file 
+see fread(f,20)                  #in "a" can not read it is only make distance 50                
+see fwrite(f,"Ring")		#write directly after the distance 20
+see fread(f,50)			#can not read
+
+f=fopen("file6.txt","a+")	#in "a+" create and read and write
+see fread(f,50)			#read
+see fwrite(f,"Hello in")	#write directly after the last word of file
+
