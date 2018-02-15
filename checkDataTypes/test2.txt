@@ -1,0 +1,14 @@
+see nl + "--------" + nl
+see isalnum("Hello") + nl + isalnum("12") + nl +
+isalnum("ABC12") + nl + isalnum("Hello Ring")
+see nl + "--------" + nl
+see isgraph("Hello") + nl + isgraph("12") + nl +
+isgraph("ABC12") + nl + isgraph(" ") + nl
+see"--------" + nl
+see isalpha("Hello") + nl + isalpha("123") + nl +
+isalpha("ABC123") + nl + isalpha("How in Ring")
+see nl + "--------" + nl
+See iscntrl("hello") + nl + iscntrl(nl) + nl +
+iscntrl("") + nl + iscntrl(eval("")) + nl + iscntrl(null)
+see nl + "--------" + nl
+see isdigit("0123456789") + nl + isdigit("0123a") + nl

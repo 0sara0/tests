@@ -1,0 +1,12 @@
+see isstring(5) + nl+ isstring("Ring") + nl
+see"--------" + nl
+see isnumber(5)    + nl +isnumber("Ring") + nl
+see"--------" +nl
+see islist([1,3,5])+ nl + islist(5) + nl +
+islist("Ring") +nl + islist(["Ring","Python"])
+see nl+"--------"  + nl
+see Type([1,3,5])  + nl +Type(5) + nl +
+Type("Ring") + nl  + Type(["Ring","Python"])
+see nl+"--------"  + nl
+see isnull(5)      + nl + isnull("hello") + nl +
+isnull([1,3,5])    + nl + isnull("") + nl + isnull("NULL")

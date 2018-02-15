@@ -1,0 +1,12 @@
+see islower("abcDEF") + nl + islower("ghi") + nl +
+islower("123")+ nl + islower("Ghi") + nl
+see "----------" + nl
+see isupper("123") + nl + isupper("WELCOME")+ nl + isupper("Welcome") + nl
+see "----------" + nl
+see isprint("Hello")+ nl + isprint("Hello in Ring") + nl +
+isprint("")+ nl + isprint(" ")+ nl + isprint(nl)
+see nl + "----------" + nl
+see ispunct("hello") + nl + ispunct(",") + nl
+see "----------" + nl
+see isspace(" ") + nl + isspace("test") + nl +
+isspace("") + nl + isspace(null)+ nl + isspace("Hello in Ring")

@@ -1,0 +1,19 @@
+see number( "5")  + 5  + nl
+see 0  +  "10"  + 2 + nl
+
+see " = = = = = " + nl
+
+see string(5)  + 5  + nl
+x =  " "  + 10  + 2 + nl
+see x + nl
+y =number(x)
+see y +5 + nl  + " = = = = = " + nl
+See ascii( "s")  + nl  + ascii( "S")  + nl
+See char(109)  + nl  +char(77)  + nl
+
+see " = = = = = " + nl
+
+See hex(10)  + nl  +hex(100)  + nl  + " = = = = = " + nl
+See dec( "a")  + nl  + dec( "c8")  + nl  + " = = = = = " + nl
+See str2hex( "hello")  + nl  + " = = = = = " + nl
+See hex2str( "68656c6c6f")
