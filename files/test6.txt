@@ -1,0 +1,5 @@
+fp1=fopen  ( "File.txt","w+")  
+
+fp2=freopen( "newFile.txt","w+",stdout)  
+
+freopen    ( "newFile.txt" , "R+",stdout)      

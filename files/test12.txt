@@ -1,0 +1,6 @@
+fp = fopen("File.txt","r+")
+r= fread(fp,30)+nl    
+see r
+
+see fwrite(fp," programming language") 
+fclose(fp) 

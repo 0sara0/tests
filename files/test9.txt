@@ -1,0 +1,3 @@
+fp = fopen( "data.txt", "r" )
+r = fgets (fp,40) 
+see r+nl

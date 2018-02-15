@@ -1,0 +1,3 @@
+fp=fopen( "newFile.txt" , "w+" )             
+fclose(fp)                               
+remove( "newFile.txt" )                     

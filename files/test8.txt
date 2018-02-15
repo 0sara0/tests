@@ -1,0 +1,15 @@
+fp = fopen("data.txt","r")
+r = fgetc(fp)                                                                    
+see r+nl 
+
+while isstring(r)=1                                                         
+               pos=ftell(fp)                                                      
+                see "At position " + pos +", character is " + r + nl
+                r = fgetc(fp)
+end
+
+rewind(fp)                              
+pos=ftell(fp)   
+see "pos: "+pos+nl   
+
+fclose(fp)  

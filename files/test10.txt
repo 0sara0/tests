@@ -1,0 +1,5 @@
+fp=fopen( "data.txt","r+")
+fputc(fp,"r")                       
+fp=freopen( "data.txt","r+",stdout)
+fputs(fp,"ring")                 
+ 

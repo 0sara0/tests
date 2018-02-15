@@ -1,0 +1,3 @@
+fp = tempfile()            
+see tempname() + nl          
+fclose(fp)

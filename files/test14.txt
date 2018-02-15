@@ -1,0 +1,13 @@
+fp = fopen("File.txt","r+")
+
+	see fexists("File.txt")+nl   #ÇáÎÑÌ íÓÇæí 1 Ãí ãæÌæÏ
+	
+	see fputc(fp,"H")+nl
+	see fputc(fp,"e")+nl
+	see fputc(fp,"l")+nl
+	see fputc(fp,"l")+nl
+	see fputc(fp,"o  ")+nl
+	
+	see fflush(fp)
+
+fclose(fp)

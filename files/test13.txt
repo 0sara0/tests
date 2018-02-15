@@ -1,0 +1,13 @@
+fp = fopen("File.txt","r+")
+	ungetc(fp,"*")+nl      #Êﬁ—«¡ Â buffer ·Õ›Ÿ «·Õ—› ›Ì
+	see fread(fp,50)+nl
+	fclose(fp)
+	
+	fp =fopen("intro.txt","r+")
+	ungetc(fp,"*")+nl
+	r= fgetc(fp)
+	while isstring(r)=1 
+		see r
+		r=fgetc(fp)
+	end
+	fclose(fp)

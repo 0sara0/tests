@@ -1,0 +1,12 @@
+
+?  write("copy_file.txt" ,"Hello in Ring")         
+		introduction="The language is portable                  
+		(Windows, Linux, Mac OS X, Android, etc.)
+		and can be used to create Console, GUI, Web,
+		Games and Mobile applications."
+
+write('file.txt',introduction)                    
+                
+
+ofile = read('file.txt')                                
+? write('newFile.txt',ofile)    

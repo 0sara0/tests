@@ -1,0 +1,3 @@
+see read("license.txt")+nl 
+
+see read("S:\anotherfile.txt")+nl  

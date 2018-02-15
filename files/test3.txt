@@ -1,0 +1,13 @@
+mylist = dir("C:\Test")  
+see mylist  
+                                                             
+for x in mylist
+
+        if x[2]=1                                       
+                see "Directory : " + x[1] + nl   
+        else                                            
+                see "File : " + x[1] + nl         
+        ok
+next
+
+see "Files count : " + len(mylist) 

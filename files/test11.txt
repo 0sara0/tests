@@ -1,0 +1,11 @@
+fp=fopen("s.txt","r+")
+
+fseek(fp,0,0)                                   
+chars=fgets(fp,20)                             
+see chars+nl
+
+fseek(fp,0,2)                                  
+see fputs(fp,"the end of file")                 
+
+fseek(fp,0,0)                                   
+see fputs(fp,"the beginning of file ") 

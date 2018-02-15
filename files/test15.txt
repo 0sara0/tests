@@ -1,0 +1,7 @@
+fp=fopen("file.txt","r+")
+x=fgetc(fp)
+
+while feof(fp)=0
+	see x
+	x=fgetc(fp)
+end
