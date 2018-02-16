@@ -1,0 +1,33 @@
+Toyota =  new Car{
+        price =  "23456"
+	model =  "2017"
+	
+		          col{
+		        	
+	                	 col1 =  "Red"      col2 =  "Gray"
+		          }
+	
+	         	  wh{
+		          
+	                	 No =  2       Speed =  3400     
+		           }   
+            
+}.print()
+ 
+Class Car
+	price model 
+
+	col =  new color
+	wh =  new wheel
+
+	func print
+
+		See 	"Toyota information :- " + nl + 
+			"Price : "		 + Toyota.price + "$" + nl + 
+		        "Model : "		 + Toyota.model + nl +   
+			"Colors : "		 + Toyota.col.col1 + " , "  + Toyota.col.col2 +  nl + 
+			"No_of_Wheels :  "	 + Toyota.wh.No + nl + 
+		        "Speed_of_Wheels : "	 + Toyota.wh.Speed   
+
+Class color	col1	col2
+Class wheel 	No	Speed 
