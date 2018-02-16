@@ -1,0 +1,27 @@
+Toyota 		 = new Car { price = 200000}
+car1 		 = new Car { price = 2000  }
+car2 		 = new Car { price = 3000  }
+car3 		 = new Car { price = 4000  }
+
+car1	> car3
+Toyota	>car3
+car1    >car2
+
+Class Car  
+
+	 price
+
+	func operator cOperator,Para                 
+
+	
+		if   ( price  > para.price )  
+		
+		   	 see "The Colors Available are :  R" + nl
+		
+		Else
+	
+		   	 see "The Colors Available are :  B" + nl
+		ok
+	
+			 See copy("*" , 15) + nl
+
