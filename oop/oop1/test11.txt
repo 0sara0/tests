@@ -1,0 +1,20 @@
+Toyota1 = new Car {speed = 3400   price = 23456}
+Toyota2 = new Car {speed = 7000   price = 50456}
+
+new_car = Toyota1  +   Toyota2
+new_car.print()
+   
+Class Car
+
+	Speed Price
+
+	func operator cOperator,para
+	
+		result = new  Car
+		result.speed = speed +  para.speed
+		result.price = price +  para.price
+		return  result
+
+func print
+
+     See "New Car has :" +  nl +  "Speed :" +   Speed  +  nl +  "price: "  +  price +  nl
