@@ -1,0 +1,9 @@
+See new  new_objs { print() }
+
+Class new_objs 
+		name id
+
+	func print 
+
+		see "enter your name" + nl  give name
+		see"enter your id" + nl  give id
