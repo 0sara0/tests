@@ -1,0 +1,26 @@
+Toyota = new Car{	Speed = 3400 	print() }
+
+See Toyota.Speed + nl
+? "==============="
+
+See Toyota.Price + nl
+? "==============="
+
+See Toyota.PriceChanges(5000000)  + nl
+? "==============="
+
+See Toyota.PriceChanges()
+
+Class Car
+
+	Speed  price 
+
+	 func print
+
+		? PriceChanges(5000000) 
+
+Private
+	Price  = 1000
+
+	func  PriceChanges  value  
+		price =   price + value
