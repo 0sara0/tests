@@ -1,0 +1,19 @@
+o1 = new objs
+o1.name = "A"  o1.id = 5678
+
+o2 = new objs
+o2.name = "B"  o2.id = 1234
+
+o3 = new objs
+o3.name = "C"  o3.id = 9101112
+
+oList = [o1 , o2 , o3]
+
+See find(oList , 5678 , 1 , "id") + nl
+See find(oList , "A" , 1 , "name") + nl
+
+See Sort(oList , 1 , "id") + nl		# it is sorted by numbers as id is number
+See Sort(oList , 1 , "name") + nl	# it is sorted by characters as name is ""
+
+Class objs  
+		name id 
