@@ -1,0 +1,15 @@
+new Car{
+
+	price = 23456
+	color = "Red"
+	model = 2017
+	print()
+}       
+class Car
+         price  color  model
+              
+           func print  
+ 
+                See "Toyota information :- " + nl +
+	      	"Price : " + price + "$"+ nl +
+	        "Color : " + color + nl + "Model : "+model + nl
