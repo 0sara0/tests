@@ -1,0 +1,16 @@
+o1 = new objs
+o1.name = "A"  o1.id = 1234
+
+o2 = new objs
+o2.name = "B"  o2.id = 5678
+
+o3 = new objs
+o3.name = "C"  o3.id = 9101112
+
+oList = [o1 , o2 , o3]				# we create alist from 3 objects in only one column
+
+See find(oList , 5678 , 1 , "id") + nl		# we search 5678 that in the attribute "id" in  the column1
+See find(oList , "A" , 1 , "name") + nl
+
+Class objs  
+	name  id
