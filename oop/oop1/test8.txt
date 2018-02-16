@@ -1,0 +1,21 @@
+Toyota=new Car{
+
+	price=23456
+	model="2017"
+	Speed=3400  
+}
+
+See Toyota.Speed
+See Toyota.Price
+   
+
+Class Car
+           Speed Price
+
+	func getSpeed   
+ 
+		Return  String(Speed)+" "+"rpm"+nl
+	
+	func SetPrice  Value  
+
+		Price=string(Value+1500)+"$"
