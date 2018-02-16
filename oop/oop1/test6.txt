@@ -1,34 +1,35 @@
-XXXX=new Boat
+XXXX =  new Boat
 XXXX{
-	color="different"
-	model="XR-c5"
+	color =  "different"
+	model =  "XR-c5"
+}.print1()
 				
-		print1()
-
-		Print2 (
+		
+# we access object XXXX that has method2  by dot 
+XXXX.Print2 (
 				 New Car{		# it is the object we pass it by reference from class  Car in class  Boat
-					price=23456
-					color="Red"
-					model=2017
+					price =  23456
+					color =  "Red"
+					model =  2017
 				}
 		) 
 
-}
+
 
 Class Boat						# in this class we have two methods
             Color  model
 
 	func print1   
 
-        	See 	"XXXX information :- "+nl+
-	      	  	"Color : "+Color+nl+
-	                "Model : "+model+nl
+        	See 	"XXXX information :- " + nl + 
+	      	  	"Color : " + Color + nl + 
+	                "Model : " + model + nl
 
 	func print2 object 	
-			# we can use method to add objects by reference from other classes
-			See 	"Toyota information :- "+nl+
-		      	  	"Price : "+object .price+"$"+nl+
-		                "Color : "+object .color+nl+
-                             									"Model : "+object .model+nl   
+							# we can use method to add objects by reference from other classes
+			See 	"Toyota information :- " + nl + 
+		      	  	"Price : " + object .price + "$" + nl + 
+		                "Color : " + object .color + nl + 
+                             									"Model : " + object .model + nl   
 class  Car   price  color  model  			# we can add class name with attributes in the same statement
 							# this class is empty structure and the building in objects
