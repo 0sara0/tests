@@ -1,0 +1,29 @@
+New Car 
+{
+	Number_of_seats = 6
+	Engine_number = 4
+	Vehicle_type = "Tractors"
+	Colors = "Gray"
+	
+	new_print()
+}
+
+Class Vehicle 
+
+	 Number_of_seats
+	 Engine_number
+	 Vehicle_type
+	 Colors
+
+	Func print
+
+	            See  "Number_of_seats: " 	 +   Number_of_seats +  nl +  
+	                 "Engine_number : " 	 +  Engine_number +  nl +  
+	                 "Vehicle_type : " 	 +   Vehicle_type +  nl +  
+		         "Colors : "		 +  Colors +  nl
+
+Class Car  from Vehicle
+
+	func new_print
+
+	        super.print() 
