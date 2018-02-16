@@ -1,0 +1,40 @@
+new Car (23456 , 2017 , "Red")     		# it is values p1 , p2 , p3 for init function , it will be executed in first
+						# then objects to ececute methods before functions then classes,
+						# so we add global variables then statements then objects then classes in arrangement in the code
+see copy(" * " , 30) + nl
+
+new   Boat ( [:model = "XR-c5"  , :color = "different"]  )
+
+
+
+
+
+class Car
+         price  color  model
+
+	func  init  p1 , p2 , p3		# init function in this class
+
+        	price = p1
+                color = p2
+                model = p3
+
+        print()
+
+	func print   
+        	See	"Toyota information :- " + nl + 
+	      	  	"Price : " + price + "$" + nl + 
+	                "Color : " + color + nl + "Model : " + model + nl
+
+Class Boat
+	Color  model
+
+	func init para			# init function in this class
+            color = para[:Color]  	# para is a alist that add values by reference by hash function  
+            model = para[:model]
+
+	print()
+	func print 
+  
+                 See 	"XXXX information :- " + nl + 
+	      	  	"Color : " + Color + nl + 
+	                "Model : " + model + nl
