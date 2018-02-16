@@ -1,8 +1,8 @@
-Toyota=new Car{
+Toyota = new Car{
 
-	price=23456
-	model="2017"
-	Speed=3400  
+	price = 23456
+	model = "2017"
+	Speed = 3400  
 }
 
 See Toyota.Speed
@@ -14,8 +14,8 @@ Class Car
 
 	func getSpeed   
  
-		Return  String(Speed)+" "+"rpm"+nl
+		Return  String(Speed) + " " + "rpm" + nl
 	
 	func SetPrice  Value  
 
-		Price=string(Value+1500)+"$"
+		Price = string(Value + 1500) + "$"
