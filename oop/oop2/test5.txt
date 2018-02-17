@@ -1,0 +1,12 @@
+name = "Ring"
+id = "1"
+
+See new  new_objs { print() }
+
+Class new_objs 
+		Self.name 
+		Self.id
+
+	func print 
+		see "enter your name" + nl  give  name
+		see"enter your id" + nl  give  id
