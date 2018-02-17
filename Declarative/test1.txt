@@ -1,0 +1,30 @@
+alist=[new  obj]
+alist[1] {h=3 w=4 draw()}
+alist[1] {h=1 w=6 draw()}
+alist[1] {h=5 w=12 draw()}
+
+
+alist+new obj
+alist[2] {h=5 w=15  draw()}
+
+
+add(alist,new obj)
+alist[3]{h=2 w=20 draw()}
+
+
+class obj  
+  
+	h  w
+
+	func draw
+
+		see copy("      ",3)  		# for  width distance
+		see copy("*" ,0+w)+nl    	# top  width 
+		
+		for  x =1 to  h   		# height on 2 edges
+	
+			see copy("      ",3)+"*"+copy(" ",w-2)+"*" +nl  
+		next
+
+		see copy("      ",3)  		# for width distance
+		see copy("*" ,0+w)+nl    	# bottom  width
