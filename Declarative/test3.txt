@@ -29,7 +29,7 @@ class  draw
 
 	func draw
 
-		see copy("      " , 3)  	 	 # for  width distance
+		see copy("      " , 3)  	 # for  width distance
 		see copy("*"  , 0 + w) + nl   	 # top  width 
 
 		for  x  = 1 to  h   		 # height on 2 edges
@@ -37,5 +37,5 @@ class  draw
 			see copy("      " , 3) + "*" + copy(" " , w-2) + "*"  + nl  
 		next
 
-		see copy("      " , 3)  	 	 # for width distance
+		see copy("      " , 3)  	 # for width distance
 		see copy("*"  , 0 + w) + nl    	 # bottom  width
