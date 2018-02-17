@@ -1,0 +1,41 @@
+o = new obj{
+		// list of objects 
+		alist[addobj()]  {
+
+					h = 3  w = 3
+		}
+	
+		alist[addobj()]  {
+
+					h = 10  w = 10
+		}
+}
+
+see o.alist[1].draw()				
+see o.alist[2].draw()
+
+class   obj from draw
+
+	alist = []  
+
+	func  addobj				# func to return  list of objects by reference
+
+			alist  +  new draw
+			return  len(alist)
+		
+class  draw
+
+	h   w
+
+	func draw
+
+		see copy("      " , 3)  	 	 # for  width distance
+		see copy("*"  , 0 + w) + nl   	 # top  width 
+
+		for  x  = 1 to  h   		 # height on 2 edges
+
+			see copy("      " , 3) + "*" + copy(" " , w-2) + "*"  + nl  
+		next
+
+		see copy("      " , 3)  	 	 # for width distance
+		see copy("*"  , 0 + w) + nl    	 # bottom  width
