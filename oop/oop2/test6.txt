@@ -1,0 +1,58 @@
+o1=new objs
+o1.name="A"  o1.id=5678
+
+o2=new objs
+o2.name="B"  o2.id=1234
+
+o3=new objs
+o3.name="C"  o3.id=9101112
+
+oList=[o1 , o2 , o3]
+
+new  new_objs 
+new  find
+new  list_items	
+		
+		          	
+Class  find  from  new_objs  
+
+	 name	
+	super.print()		
+	print2()
+
+	func print2
+
+		f=find(oList , 0  +  id , 1 , "id")
+
+		if      f !=0 
+			see "success"	
+			new list_items{
+					 display(this.id) 	# take id from class find that inherits it from class  new_objs
+			 }
+
+			x= oList[f] 
+			see "name :"  +   x.name
+
+		else	
+
+			see"sorry"
+
+		ok
+
+
+class  list_items	
+
+	func display id 
+
+		see nl  +  "ID: "  +  id  +  nl
+
+Class objs  
+	name  id  
+
+Class new_objs 
+
+	id
+
+	func print 
+
+		see"enter your id"  +  nl  give  id
