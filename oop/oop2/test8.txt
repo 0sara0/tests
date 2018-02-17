@@ -1,0 +1,17 @@
+eval('x = 5' )
+see x + nl
+
+eval('x = 2  y =  4  z = 5')
+see x + nl + y + nl + z + nl
+
+See"enter value of x : " + nl	 Give x      
+See"enter value of y : " + nl     give y 
+
+eval('x   y   z = x-y ')
+see x + nl + y + nl + z + nl
+
+eval("x = " + 5 )
+see x + nl
+
+eval (   "X" + 2   +  " = "  + 20   )
+see x2 + nl
