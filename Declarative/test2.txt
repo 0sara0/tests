@@ -7,8 +7,8 @@ o2 = o
 ? o1.addobj()  
 ? o2.addobj()  
 
-o2.h = 10 		 		 # add new attributes to the new object "o2"
-o2.w = 10 		   		 # add new attributes to the new object "o2"
+o2.h = 10 		 			 # add new attributes to the new object "o2"
+o2.w = 10 		   			 # add new attributes to the new object "o2"
 ?  o2.addobj()  
 
 o.alist[1]{h = 2  w = 25 draw()}
@@ -27,13 +27,13 @@ class  draw
 
 	func draw
 
-		see copy("      ",3) 	 # for  width distance
-		see copy("*" ,0 + w) + nl    # top  width 
+		see copy("      ",3) 		# for  width distance
+		see copy("*" ,0 + w) + nl    	# top  width 
 
 		for  x  = 1 to  h   #height on 2 edges
 
 			see copy("      ",3) + "*" + copy(" ",w-2) + "*"  + nl  
 		next
 
-		see copy("      ",3)  #for width distance
-		see copy("*" ,0 + w) + nl    #bottom  width
+		see copy("      ",3)  		# for width distance
+		see copy("*" ,0 + w) + nl   	# bottom  width
