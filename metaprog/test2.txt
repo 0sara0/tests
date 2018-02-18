@@ -1,0 +1,95 @@
+# sample : it is a test by degrees
+# Sara Hamdy
+
+degree  = 0
+tab  = char(9)  + char(9)
+
+A =" What is the name of this language "
+B ="IS this  language simple"
+C ="IS this  language natural"	
+D ="IS this  language visual"
+E =" What is the feature of this language "
+F ="IS this  language  dynamic "
+G ="IS this  language Free Open Source"	
+H ="IS this  language Declarative Programming , why"
+I =" IS this  language has Notepad to write/execute programs. "
+J ="is it use Windows ,  Linux ,  Mac OS X ,  Android"
+Q ="can  this  language  create Console ,  GUI ,  Web ,  Games and Mobile applications ?"
+sqList =[A , B , C , D , E , F , G , H , I , J , Q]
+
+#-----------------------------------------------------------------------------------------------------
+
+func main
+	while true
+		see `
+			"Hello in the  Exam"
+
+	 		please Enter your ID
+			ID: ` Give ID
+			listIDs =[123 , 124 , 125 , 126 , 127 , 128 , 129 , 130 , 110 , 111]
+			if find(listIDs , 0 +ID) ! =0
+				? "Welcome  ,   enter 1 to start"   Give nStart
+				if nStart =1
+					? nl + "============"
+					start()
+
+
+				else
+					 ? " oh , Do you want to start , answer yes or No"  Give  stAnswer
+				if stAnswer ='yes'
+
+					? nl + "============"
+					start()
+					
+				else 
+
+				 	bye
+				ok
+
+				ok
+
+		else 
+
+			see "sorry  ,  error in ID  , try again"
+
+		ok
+
+	end
+
+func start
+
+	for y  =1 to len(sqList)
+
+		see  "["  + y  + "]"  + "  "  + sqList[y]  + nl
+
+		if   sqList[y]  = A 
+			? tab  + "[1]Ring"  + tab  + "[2]Python"  + tab  + "[3] C  +   + "				
+			? "the answer No :"  Give answer  ? nl
+
+		but  sqList[y]  = E
+
+			? tab  + "[1]very small  ,   fast  ,  Weakly Typed"  + tab  + "[2]Comples  ,  slow"
+			? "the answer No :"  Give answer  ? nl
+
+		else	
+
+			? tab  + "[1]True"  + tab  + "[2]False"	 	
+			? "the answer No :"  Give answer  ? nl
+
+		ok
+
+
+		if 	answer =1
+
+					degree =degree +1
+
+		else
+
+					degree =degree
+		ok
+
+
+	next 
+
+	? "your Degree is :"   + degree
+	? nl  + "============"
