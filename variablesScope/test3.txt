@@ -1,0 +1,38 @@
+#sample : find the date in your device and compare with date in objects
+#Sara Hamdy
+new family{
+
+		p{
+			DateOfBirth = "28/05/2017"
+			name = "Asmaa"
+		}
+
+		p{
+			DateOfBirth = "29/08/2017"
+			name = "Sara"
+		}
+
+		pindex = Find (addpersons,date(), 1, "DateOfBirth")
+		
+		if pindex ! = 0
+		
+			see "happy Birthday" + " " + addpersons[pindex].name
+		else
+		
+			bye
+		ok
+
+}
+
+Class family
+
+	p  			
+	addpersons = []
+	func getp 
+ 
+		addpersons + new person		
+		return  addpersons[len(addpersons)]
+		
+class person
+
+	name  DateOfBirth
