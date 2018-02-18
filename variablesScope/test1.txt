@@ -1,0 +1,46 @@
+# sample : it finds husband'  inheritance in Islamic 
+# sara Hamdy
+
+/*
+legacy represenst  all wife' legacy after death
+*/
+
+see "Enter The values "	 + nl  +  "Legacy  = " 			Give Legacy
+see "enter 1 if there is a Son and 0 if not  = "			Give Son
+see "enter 1 if there is a sonOfSon and 0 if not  = " 		Give sonOfSon
+see "enter 1 if there is a daughterOfSon and 0 if not  = "	Give daughterOfSon
+see "enter 1 if there is a daughter and 0 if not  = " 		Give daughter
+
+oh = new husband{
+
+			searchForNerve()
+			if  status = nmax
+
+				see "Legacy of husband = " + (1/2)*(legacy)
+			else
+
+				see "Legacy of husband = " + (1/4)*(legacy)
+			ok
+}
+									  		        
+class Wife
+
+	members = [son  ,  sonOfSon  , daughter  , daughterOfSon]
+	status = 0
+	nmax = len(members)
+
+	func searchForNerve
+	  
+		for x = 1 to nmax	
+		
+			if members[x] = 0
+
+				status = status + 1
+			else 
+	
+				status = 0 
+			ok
+												
+		next
+
+class husband from wife	
