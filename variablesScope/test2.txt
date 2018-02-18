@@ -1,0 +1,54 @@
+new point {x = 10 y = 20 z = 30 start() }
+
+class point x y z
+        func start
+
+		x = 7
+
+                see self 		 # 10 20 30
+		oself = self
+	new local{
+
+		see oself.y + nl  #only read y = 20
+	}
+
+                ol = new Local 
+
+                        ol.x  =  100
+                        ol.y  =  200
+                        ol.z  =  300
+		see x + nl + y + nl + z + nl      # search in local then object of method 
+
+		o = new Local
+			o{
+
+                        x = 1 
+                        y = 2
+                        z = 3
+
+			see x + nl + y + nl + z + nl
+			
+                }
+
+
+		self.y = 60 		# modify attribute"y" of class
+		see y + nl
+		see x + nl + y + nl + z + nl				
+ 
+	new Local{              
+                        see this.x  +  nl 
+                        see this.y  +  nl 
+                        see this.z  +  nl 
+                }
+                see self.x  +  nl 
+                see self.y  +  nl 
+                see self.z  +  nl
+	self{
+
+		see x + nl
+		see y + nl
+		see z + nl
+	}
+ 
+class Local
+	x y z
