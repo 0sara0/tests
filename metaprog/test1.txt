@@ -1,0 +1,92 @@
+# sample : it is a test by degrees
+# Sara Hamdy
+
+degree = 0
+tab = char(9) + char(9)
+oq = new   authenticationAndStart  { 
+				A = " What is the name of this language "
+				B = "IS this  language simple"
+				C = "IS this  language natural"	
+				D = "IS this  language visual"
+				E = " What is the feature of this language "
+				F = "IS this  language  dynamic "
+				G = "IS this  language Free Open Source"	
+				H = "IS this  language Declarative Programming , why"
+				I = " IS this  language has Notepad to write/execute programs. "
+				J = "is it use Windows ,  Linux ,  Mac OS X ,  Android"
+				Q = "can  this  language  create Console ,  GUI ,  Web ,  Games and Mobile applications ?"
+ 				que = [A , B , C , D , E , F , G , H , I , J , Q]
+				listIDs = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10]
+
+ }.start()
+
+class authenticationAndStart  
+					   
+	func start
+
+		while true
+			degree = 0
+			see `
+				"Hello in the  Exam"
+	 			please Enter your ID
+				ID: ` Give ID
+
+				if find(listIDs , 0 + ID) ! = 0
+
+					see "Welcome  ,   enter 1 to start"  + nl  Give nStart
+
+					if nStart = 1
+
+						? nl + "========================"
+
+						new Ringquiz{startQuiz()}
+
+					else 
+						? " oh , Do you want to start , answer yes or No"   Give  stAnswer
+
+						if stAnswer = 'yes'
+
+							? nl + "========================"
+							new Ringquiz{startQuiz()}
+
+						else 
+
+				 			bye
+						ok
+					ok
+				else 
+
+					see "sorry  ,  error in ID  , try again "
+				ok
+
+		end
+#--------------------------------------------------------------------------------------------------------------------------
+class Ringquiz  
+
+	func startQuiz
+
+		for y  = 1 to len(que)
+				see  "[" + y + "]" + "  " + que[y] + nl
+				if   que[y] = A 
+							? tab + "[1]Ring" + tab + "[2]Python" + tab + "[3] C +  + "				
+							? "the answer No :"  Give answer  ? nl
+
+				but  que[y] = E
+
+							? tab + "[1]very small ,  fast , Weakly Typed" + tab + "[2]Comples , slow"
+							? "the answer No :"  Give answer  ? nl
+
+				else			? tab + "[1]True" + tab + "[2]False"	 	
+							? "the answer No :"  Give answer  ? nl
+
+				ok
+
+				if 	answer = 1
+					degree = degree + 1
+				else
+					degree = degree
+				ok	
+		next 
+
+				? "your Degree is :"  + degree
+				? nl + "========================"
