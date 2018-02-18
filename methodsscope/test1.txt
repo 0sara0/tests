@@ -1,0 +1,26 @@
+new file { ch ="ring.txt"  readFile() }
+
+func readFile
+
+	fp =fopen("ring.txt" ,"w +")
+	see fread(fp ,10) +nl
+
+func writefile
+
+	fp =fopen("ring.txt" ,"w +")
+	see fwrite(fp ,"  Ring is a powerful language  ") +nl
+
+Class file
+
+	func readFile  
+
+		see read(ch) +nl	
+		new Object{ readFile() }
+		new file{ writefile() }
+		see read(ch) +nl	
+
+	func WriteFile  
+
+		see write("ring.txt" ,"The language is simple ,flexible and fast") +nl
+				
+Class Object		
