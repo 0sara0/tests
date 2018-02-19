@@ -1,0 +1,11 @@
+DefineNaturalCommand.SyntaxIscommandstringstring([
+
+						        :Package = "MyLanguage.Natural",
+						        :command = "the name is",
+						        :Function = func {	  
+							see  "you will see the expression no. 1 in  the  execution file"+nl
+						 	see" the name  of this lang. is "+ expr(1)+nl
+							see "and after that i show the expression no. 2 in the execution file"+nl
+							see expr(2)	 			
+						        }
+])
