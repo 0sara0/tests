@@ -1,0 +1,38 @@
+# using "ok" to end
+x=7
+if  x =1
+
+	see "True"+nl
+but x=0
+
+	see "False"+nl
+else
+
+	see "Error"+nl
+ok
+
+#Using  "elseif" as "but"
+x=1
+if  x =1
+
+	see "True"+nl
+elseif  x=0
+
+	see "False"+nl
+else
+
+	see "Error"+nl
+ok
+
+#Using  "{}" as  "special  Keywords"
+x=0
+if  x =1{
+
+	see "True"+nl
+elseif  x=0
+
+	see "False"+nl
+else
+
+	see "Error"+nl
+}
