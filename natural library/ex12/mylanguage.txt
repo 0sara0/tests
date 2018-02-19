@@ -1,0 +1,15 @@
+# Syntax is Keyword string with  string values
+# Syntax is Keyword string
+
+load "stdlib.ring"
+load "naturallib.ring"
+
+MyLanguage = New NaturalLanguage {
+
+        SetLanguageName(:MyLanguage)
+	setCommandsPath(CurrentDir())
+        SetPackageName("MyLanguage.Natural")
+        UseCommand("show")
+	runstring("show 'the numbers in alist :' ")
+
+} 
