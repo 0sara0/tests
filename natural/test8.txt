@@ -1,0 +1,37 @@
+new natural {
+     		take  2 4 6    create  mul	 
+}
+
+class natural
+
+        take = 0   create = 0  mul = 0	
+        keyword1 = 0
+        keyword2 = 0
+
+        func braceexpreval r
+
+                if 	 keyword1 = 1 or keyword2 = 1
+			 keyword1 = 0   keyword2 = 0
+			 return		
+		ok
+	
+		alist + r
+
+	func gettake
+
+ 		keyword1 = 1
+
+	func getcreate
+
+ 		keyword2 = 1
+
+	func getmul
+
+		for x in alist
+
+			nmul = nmul*x
+		next
+
+		see "Result of  mltiplication of expressions '2,4,6' is :" + nmul	
+private
+	alist = []   nmul = 1
