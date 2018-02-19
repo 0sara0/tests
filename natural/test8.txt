@@ -8,6 +8,8 @@ class natural
         keyword1 = 0
         keyword2 = 0
 
+# braceexpreval  take exprs. , it may be numbers or strings or list in natural words in objects then add them to alist
+
         func braceexpreval r
 
                 if 	 keyword1 = 1 or keyword2 = 1
