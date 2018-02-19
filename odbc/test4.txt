@@ -1,0 +1,14 @@
+# fetch query and get the tables
+load "odbclib.ring"
+
+oOdbc=odbc_init()
+odbc_connect(oOdbc,"DBQ=data.mdb;Driver={Microsoft Access Driver (*.mdb)}")
+see odbc_tables(oOdbc) + nl
+
+while odbc_fetch(oOdbc)
+
+       see odbc_getdata(oODBC,3)+nl
+end
+
+odbc_disconnect(oOdbc)
+odbc_close(oOdbc)
