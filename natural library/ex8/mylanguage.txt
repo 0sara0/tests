@@ -1,0 +1,12 @@
+# the syntax is command expression
+# take only one expr(1)
+
+load "naturallib.ring"
+MyLanguage = New NaturalLanguage {
+        SetLanguageName(:MyLanguage)
+	setCommandsPath(CurrentDir())
+        SetPackageName("MyLanguage.Natural")
+	UseCommand("TheNameIs")
+	runstring( "  The Name Is  'Ring'  and we wish to be no.  1  " )				
+}
+
