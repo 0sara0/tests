@@ -1,0 +1,46 @@
+# using "put/Get" and "off" to end switch
+
+put	"Enter the number"
+Get	num
+Switch 	num
+on 1
+
+	see "True" + nl
+on 0
+
+	see "False" + nl
+other
+
+	see "Error" + nl
+off
+# ===========================
+#using "see/Get" and "case as on" , I mix between styles "on,case"
+
+put  "Enter the number"
+Get	$num
+Switch 	$num
+case 1
+
+	see "True" + nl
+on 0
+
+	see "False" + nl
+other
+
+	see "Error" + nl
+off
+# ===========================
+# using "see/Get" and "case as on" ,"else as other", braces "{}" to end switch,I mix between styles
+see  "Enter the number"
+Get	@num
+Switch 	@num{
+case 1
+
+	see "True" + nl
+on 0
+
+	see "False" + nl
+else
+
+	see "Error" + nl
+}
