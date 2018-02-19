@@ -1,0 +1,33 @@
+#BraceStart and BraceEnd Methods
+o1=new test {
+			changeringoperator = is 
+		        my name is "sara"
+}
+
+
+changeringoperator  is  = 
+
+class test
+
+	my name
+	my = 0 name = 0 n = 0 is = 0
+			
+	func getmy
+
+		if n=0
+			n++
+		ok
+	func setname cvalue
+
+		if n=1
+			n=0
+			see  "my name	is " + cvalue +  nl
+		ok
+
+        func bracestart
+
+                see "what is your name?" + nl
+
+        func braceend
+
+                see "ok,thanks" + nl
