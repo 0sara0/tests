@@ -1,0 +1,15 @@
+DefineNaturalCommand.SyntaxIskeywordstring([
+        :Package = "MyLanguage.Natural",
+        :keyword = "show",
+        :Function = func {
+
+				alist=[]
+	
+				for y =1 to 10{
+
+							alist+y
+				} 
+
+     			       see alist
+      		  }
+])
