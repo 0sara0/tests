@@ -1,0 +1,11 @@
+load "odbclib.ring"
+
+pODBC = odbc_init()
+odbc_connect(pODBC,"DBQ=data.mdb;Driver={Microsoft Access Driver (*.mdb)}")
+see odbc_execute(pODBC,"select value from tel where id = 2 ") + nl
+odbc_fetch(pODBC)
+
+	// "new imag.jpg" is the image name when restored from database
+        write("new imag.jpg",hex2str( odbc_getdata(pODBC,1) ) )
+odbc_disconnect(pODBC)
+odbc_close(pODBC)
