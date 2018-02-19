@@ -1,0 +1,60 @@
+#changing operators
+#to escape from the scanner stage
+ChangeRingoperator       +  _+
+New App
+{
+                I want window + the window title = "hello world"
+}
+
+Class App
+
+                # Attributes for the instruction I want window
+                                i want window
+                                nIwantwindow = 0
+                # Attributes for the instruction Window title
+                # Here we don't define the window attribute again
+                                title
+                                nWindowTitle = 0
+                # Keywords to igno=re, just give them any value
+                                the=0    +
+#to not affect to the operators  ++ when checking  also in scanner stage
+ChangeRingoperator         _+  +
+                func geti
+
+                        if nIwantwindow = 0
+                                nIwantwindow++
+                        ok
+
+                func getwant
+
+                        if nIwantwindow = 1
+                                nIwantwindow++
+                        ok
+
+                func getwindow
+
+                        if nIwantwindow = 2
+                                nIwantwindow++
+                        ok
+#to define "+" as identifier
+ChangeRingoperator         +   _+
+                func get+
+#to not affect to the string concatenation "+nl"
+ChangeRingoperator         _+   +
+
+                        if nIwantwindow = 3
+                                nIwantwindow=0
+
+                                see "Instruction : I want window" + nl
+                        ok
+
+                	 if nWindowTitle = 0
+                                nWindowTitle++
+                        ok
+
+                func settitle cValue
+
+                        if nWindowTitle = 1
+                                nWindowTitle=0
+                                see "Instruction : Window Title = " + cValue + nl
+                        ok
