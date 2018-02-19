@@ -1,0 +1,11 @@
+# file name"numbers.ring"
+
+DefineNaturalCommand.SyntaxIskeywordexpressionexpression([
+
+        :Package = "MyLanguage.Natural",
+        :keyword = "numbers",
+        :Function = func {
+				division_result=expr(1)/expr(2)
+				see  "result1=" + division_result+nl										     			        
+			}
+])

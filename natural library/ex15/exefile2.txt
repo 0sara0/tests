@@ -1,0 +1,18 @@
+# file name "exefile2.ring"
+# SetOperators
+
+load"mylanguage.ring"
+
+Mylanguage{
+		  SetOperators("	()	,	@	&	")
+		  runstring("
+		
+				  numbers	(100, 25)
+				  &numbers	(10 ,2)
+				  &numbers	(4 ,2)	
+				  &ends with  hello  @'welcome'@ 	' '  	
+				        
+		  ")
+
+}
+
