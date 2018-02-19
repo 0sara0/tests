@@ -1,0 +1,14 @@
+# the syntax is command number
+# with expressions 'i take the expr after the command in runstring() as i defined the syntax 'commandNumber'
+# the syntax is command number
+
+load "naturallib.ring"
+
+MyLanguage = New NaturalLanguage {
+				        SetLanguageName(:MyLanguage)
+					setCommandsPath(CurrentDir())
+				        SetPackageName("MyLanguage.Natural")
+					UseCommand("thenameis")
+					runstring( "  the name is 1  " )
+				
+}
