@@ -1,0 +1,12 @@
+# as keyword
+# file name"hello.ring"
+
+DefineNaturalCommand.SyntaxIskeywordexpressionexpression([
+
+        :Package = "MyLanguage.Natural",
+        :keyword = "hello",
+        :Function = func {
+				see  expr(1)+" " +expr(2)+nl			
+     			        
+			}
+])
