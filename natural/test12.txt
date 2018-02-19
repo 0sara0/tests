@@ -1,0 +1,62 @@
+changeringoperator = is
+
+New App
+{
+        I want window
+        The window title =  sara
+}
+
+Class App
+
+	is=0
+	changeringoperator  is  =
+
+                i want window  title
+                nIwantwindow = 0  nWindowTitle=0  the=0	 is=0
+
+        func geti
+
+                if nIwantwindow = 0
+                        nIwantwindow++
+                ok
+
+        func getwant
+
+                if nIwantwindow = 1
+                        nIwantwindow++
+                ok
+
+        func getwindow
+
+                if nIwantwindow = 2
+                        nIwantwindow= 0
+         
+                        see "Instruction : I want window" + nl
+                ok
+		if nWindowTitle=0
+			nWindowTitle++
+		ok
+	func gettitle
+
+		if nWindowTitle=1
+				nWindowTitle=0
+		ok	
+	//it will be executed after i checked the errors in "braceerror" function
+	func braceend
+
+		see "Instruction : Window Title = " + literal 
+	//Error (R24) : Using uninitialized variable : hello  Error (R24) : Using uninitialized  variable : world
+	func braceerror
+
+		index=substr(ccatchError,":")
+		while index>0
+				index=substr(ccatchError,":")
+				ccatchError=substr(ccatchError,index+1)
+		end
+		literal=substr(ccatchError,1)
+
+private
+		
+	literal=""	
+
+changeringoperator  =  is
