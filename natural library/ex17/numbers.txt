@@ -1,0 +1,34 @@
+#file name is "numbers.ring"
+Package MyLanguage.Natural
+
+	Class numbers
+
+		func getnumbers
+
+			startcommand()
+			commandData()[:name]="numbers"
+			commandData()[:nExpr]=0
+			commandData()[:aExpr]=[]
+
+		func braceexpreval_numbers nValue
+
+			if isCommand() and commandData()[:name]="numbers"{
+				if isNumber(nvalue){
+					commandData()[:nExpr]++
+					commandData()[:aExpr]+nvalue	
+					if commandData()[:nExpr]=3{
+						execute1()
+					}
+				}
+			}
+									
+	        func AddAttributes_numbers
+
+	                AddAttribute(self,"numbers")
+
+	 	func   Execute1
+
+					division_result=expr(1)/expr(2)
+					see"result1=" + division_result+nl
+						add=division_result+expr(3)	
+					see"division_result+expr(3)="+add +nl							     			        
