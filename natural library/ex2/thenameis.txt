@@ -1,0 +1,11 @@
+# commandstring
+# the file name is "thenameis.ring"
+
+DefineNaturalCommand.SyntaxIscommandstring([
+					        :Package = "MyLanguage.Natural",
+					        :command = "the name is",
+					        :Function = func {	  
+						see "		The name of this language is	"+expr (1)
+					            			
+					        }
+])

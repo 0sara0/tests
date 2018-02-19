@@ -1,0 +1,14 @@
+Load "naturallib.ring"
+
+# commandstring
+# the execution file name"mylanguage.ring"
+
+MyLanguage = New NaturalLanguage {
+
+				        SetLanguageName(:MyLanguage)
+					setCommandsPath(CurrentDir())
+				        SetPackageName("MyLanguage.Natural")
+					UseCommand("thenameis")
+					runstring( "  he asked me for the name of this laguage and i tell him for the name,
+								the name is 'Ring' " )
+}
