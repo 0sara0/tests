@@ -1,0 +1,11 @@
+DefineNaturalCommand.SyntaxIscommandnumber([
+
+					        :Package = "MyLanguage.Natural",
+					        :command = "the name is",
+					        :Function = func {	  
+									see "Hello"+nl+'tell me  the name of this language'+nl
+									Give name
+									see name+'!'+" "+'it is a beautiful language'+nl+'I see it need to be the  era lang.'
+						 			
+					        }
+])

@@ -1,0 +1,14 @@
+# the syntax is command number
+# see i put a numeric value'0' after command
+
+load "naturallib.ring"
+
+MyLanguage = New NaturalLanguage {
+
+				        SetLanguageName(:MyLanguage)
+					setCommandsPath(CurrentDir())
+				        SetPackageName("MyLanguage.Natural")
+					UseCommand("thenameis")
+					runstring( "  the name is 0  " )
+				
+}
