@@ -1,0 +1,6 @@
+load "odbclib.ring"
+
+oOdbc=odbc_init()
+see odbc_drivers(oOdbc)+nl
+see copy("*",20)+nl
+see odbc_datasources(oOdbc)
