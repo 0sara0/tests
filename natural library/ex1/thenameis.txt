@@ -1,0 +1,11 @@
+# file name is "thenameis.ring"
+
+DefineNaturalCommand.SyntaxIscommand([
+				        :Package = "MyLanguage.Natural",
+				        :command = "the name is",
+				        :Function = func {	  
+								see "Hello"+nl+'tell me  the name of this language'+nl
+								Give name
+								see name+'!'+" "+'it is a beautiful language'  			
+				        }
+])
