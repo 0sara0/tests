@@ -1,0 +1,14 @@
+#fetch query and get the columns of table
+load "odbclib.ring"
+
+oOdbc=odbc_init()
+odbc_connect(oOdbc,"DBQ=data.mdb;Driver={Microsoft Access Driver (*.mdb)}")
+odbc_columns(oOdbc,"clients")+nl
+
+while odbc_fetch(oOdbc)
+
+      	 	see odbc_getdata(oODBC,4)+nl
+end
+
+odbc_disconnect(oOdbc)
+odbc_close(oOdbc)
