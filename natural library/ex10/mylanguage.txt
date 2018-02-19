@@ -1,0 +1,14 @@
+# Syntax is Keyword without expr 
+# file name is "mylanguage.ring"
+load "stdlib.ring"
+load "naturallib.ring"
+MyLanguage = New NaturalLanguage {
+
+	        SetLanguageName(:MyLanguage)
+		setCommandsPath(CurrentDir())
+	        SetPackageName("MyLanguage.Natural")
+		//the name of the file 
+	        UseCommand(:Show)
+		// write only the keyword   in the 'runstring'
+		runstring(" Show  ")
+}
