@@ -1,0 +1,42 @@
+changeringkeyword  in _in
+new natural {
+       			 Ring will be  1 in the near future 
+}
+
+class natural
+
+	Ring will be
+	 be = 0  in = 0   the = 0 near = 0  future = 0
+         Keyword = 0
+	
+	func braceexpreval  r
+
+		while Keyword = 1 or Keyword = 2
+						Keyword = 0
+						return
+		end	
+# print the  expression "1"
+		see"Ring will be " + r   + nl
+
+	func getRing
+
+		Keyword = 1
+	func getwill  
+
+		Keyword = 1
+	func getbe  
+
+		Keyword = 1
+	func getin
+
+		Keyword = 2
+	func getthe 
+ 
+
+		Keyword = 2
+	func getnear 
+
+		Keyword = 2
+	func getfuture
+
+		Keyword = 2
