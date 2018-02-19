@@ -1,0 +1,22 @@
+load "odbclib.ring"
+
+pODBC = odbc_init()
+See "Connect to database" + nl
+see odbc_connect(pODBC,"DBQ=data.mdb;Driver={Microsoft Access Driver (*.mdb)}") + nl
+odbc_autocommit(pODBC,0)
+        odbc_execute(pODBC,"insert into Clients values ('1',  'Nora' ,'female' )")
+odbc_commit(pODBC)
+        odbc_execute(pODBC,"insert into Clients values ('2','Mohamed','male' )")
+ODBC_ROLLBACK(pODBC)
+        odbc_execute(pODBC,"insert into Clients values ('3','Sara','female')")
+	odbc_execute(pODBC,"insert into Clients values ('4', 'Ahmed' ,'male' )")
+	odbc_execute(pODBC,"insert into Clients values ('5','Maged','male' )")
+odbc_commit(pODBC)
+odbc_autocommit(pODBC,1)
+odbc_commit(pODBC)
+        odbc_execute(pODBC,"insert into Clients values ('6','Yasmin','female' )")
+ODBC_ROLLBACK(pODBC)
+        odbc_execute( pODBC,"  insert into Clients values ('7','Eyad','Male')  " ) 
+odbc_commit(pODBC)
+odbc_disconnect(pODBC)
+odbc_close(pODBC)
