@@ -1,0 +1,8 @@
+DefineNaturalCommand.SyntaxIscommandexpressionexpression([
+
+        :Package = "MyLanguage.Natural",
+        :command = "the name is",
+        :Function = func {	  
+ 				see " the name  of this lang. is "+expr(1)+' and will be '+expr(2)
+	}
+])
