@@ -1,0 +1,6 @@
+load "odbclib.ring"
+
+oOdbc=odbc_init()
+see odbc_connect(oOdbc,"DBQ=data.mdb;Driver={Microsoft Access Driver (*.mdb)}")
+odbc_disconnect(oOdbc)
+odbc_close(oOdbc)
