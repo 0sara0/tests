@@ -1,0 +1,12 @@
+# file name "exefile2.ring"
+
+load"mylanguage.ring"
+
+Mylanguage.runstring("
+
+			  numbers	100 25
+			  numbers	10 2	
+			  numbers	4 2	
+			  hello  'welcome' 	' '  	
+		        
+")

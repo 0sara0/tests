@@ -1,0 +1,4 @@
+	Hello
+say  'hello'  to  'machine!'
+I want a program that can make a division operation
+of two numbers 1000  and  5  then   try to add  

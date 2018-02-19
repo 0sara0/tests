@@ -1,0 +1,33 @@
+# Commands with class and functions
+# we use the same file "file.txt" and this file is the same file of command  "numbers.ring" but by class and functions
+# the execution file "exefile2.ring"
+
+Package MyLanguage.Natural
+
+	Class numbers
+
+		func getnumbers
+
+			startcommand()
+			commandData()[:name]="numbers"
+			commandData()[:nExpr]=0
+			commandData()[:aExpr]=[]
+
+		func braceexpreval_numbers nValue
+
+			if isCommand() and commandData()[:name]="numbers"{
+				if isNumber(nvalue){
+					commandData()[:nExpr]++
+					commandData()[:aExpr]+nvalue	
+					if commandData()[:nExpr]=2{
+						Execute()		
+					}			
+				}
+		}
+	        func AddAttributes_numbers
+
+	                AddAttribute(self,"numbers")
+	 	func Execute
+
+					division_result=expr(1)/expr(2)
+					see  "result1=" + division_result+nl

@@ -1,0 +1,14 @@
+# file name "mylanguage.ring"
+
+load "stdlib.ring"
+load "naturallib.ring"
+
+MyLanguage = New NaturalLanguage {
+
+        SetLanguageName(:MyLanguage)
+	setCommandsPath(currentdir())
+        SetPackageName("MyLanguage.Natural")
+	UseCommand("hello")
+	UseCommand("numbers")		
+	runfile("file.txt ")
+}
