@@ -1,0 +1,19 @@
+new app  {
+		hello  sara
+}
+
+Class App
+
+	func braceerror
+		// print index of : inside statements of cCatchError
+		index = substr(cCatchError,":")
+		//remain takes all strings  after :  every time  untill s = 0 or there is not ":"
+		while index>0
+
+			index = substr(cCatchError,":")
+			//means statements of cCatchError after every index + 1 untill reach to the last ":" then it will  be out of while  loop
+			cCatchError =  substr(cCatchError,index + 1)
+		end
+
+			//print  statements  of  result of cCatchError from the beginning"1"  or after last  ":"
+		see   substr(cCatchError,1)
