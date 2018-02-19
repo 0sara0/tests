@@ -1,0 +1,34 @@
+changeringkeyword  to     _to
+changeringkeyword  and  _and
+changeringkeyword  give  _give
+
+
+new natural{
+
+    		 i want to add  2 and  3 and give the sum  then mul  10   with  result 
+}
+
+class natural
+
+	  i = 0  want = 0  to = 0  add = 0    and = 0   give = 0   the = 0    sum = 0  then = 0 mul = 0	 result = 0  with = 0 
+
+	func braceexpreval  r 
+
+			alist + r
+#i take attribute result to be able to see all expressions before its"2,3,10"	
+	func getresult	
+
+		for x in alist
+
+			if x = 10
+
+				result = nsum*x
+			ok
+
+			nsum = nsum + x
+		next
+#print the result of mul 10 with the summitions of exp. before 
+		see "the result of sum and mul of expressions =  " + result
+		
+	private
+			alist = []    nsum = 0	
