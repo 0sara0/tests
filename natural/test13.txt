@@ -1,0 +1,26 @@
+#jump from one word to another  untill reaching  expressions  and neglect other words"0"
+changeringkeyword  in _in
+changeringoperator  =   be
+
+new natural {
+       			 Ring will be  1 in the near future
+}
+
+changeringoperator   be   = 
+class natural
+	Ring will 
+	in = 0   the = 0 near = 0  future = 0
+      
+	n = 0
+
+	func getRing
+
+		if n = 0
+			n ++ 
+		ok
+	func setwill  nvalue
+
+		if n = 1
+			n = 0
+			see  "Ring  will be  " + nvalue + nl
+		ok
