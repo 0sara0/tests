@@ -1,0 +1,11 @@
+new point {
+	        x=10 y=20 z=30
+	        test()
+}
+
+class point x y z
+
+        func braceerror
+
+                see "Handle Error!" + nl
+                see "Message :" + cCatchError + nl
