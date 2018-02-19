@@ -1,0 +1,33 @@
+import numbers
+
+o1 = new  opr{
+		num1 = 10
+		num2 = 5
+		add()  mul()   sub()
+}
+
+package numbers{
+
+Class opr
+	num1 num2
+
+	func  add
+
+		result = num1 + num2
+		see result + nl
+	end 
+
+	func mul
+
+		result = num1 + num2
+		see result + nl
+	endfunc
+
+	def  sub{
+
+		result = num1-num2
+		see result + nl
+	}
+
+endclass	
+}
