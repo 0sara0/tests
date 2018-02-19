@@ -1,0 +1,13 @@
+# file name is "thanks.ring"
+
+Package MyLanguage.Natural
+
+	class thanks
+	
+	        func AddAttributes_Hello
+
+	                AddAttribute(self,:thanks)
+	
+	        func Getthanks
+
+	                See  "ok" + nl 

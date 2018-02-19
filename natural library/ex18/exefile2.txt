@@ -1,0 +1,13 @@
+# file name is "exefile2.ring"
+
+load"mylanguage.ring"
+
+Mylanguage{
+
+	  SetOperators("	(), &")
+	  runstring("
+			  numbers(100, 25,1)
+			  &numbers(10 ,2,2)
+			  &numbers(4 ,2,3)				        
+	  ")
+}

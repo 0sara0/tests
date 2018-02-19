@@ -1,0 +1,17 @@
+# file name is "mylanguage.ring"
+
+load "stdlib.ring"
+load "naturallib.ring"
+
+MyLanguage = New NaturalLanguage {
+
+        SetLanguageName(:Language)
+
+	// change it as your path of your commands files
+	setCommandsPath("C:\Test\NaturalLibrary\Command")
+        SetPackageName("MyLanguage.Natural")
+	UseCommand("numbers")
+	UseCommand("thanks")	
+	runfile("file.txt ")
+	
+}

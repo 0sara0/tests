@@ -1,0 +1,32 @@
+# file name is "say.ring"
+# expressions for strings
+
+Package MyLanguage.Natural
+class  say
+
+	func getsay
+
+	startcommand()
+	commandData()[:name]="say"
+	commandData()[:nExpr]=0
+	commandData()[:aExpr]=[]
+	func braceexpreval_say  cvalue
+
+		if iscommand() and commandData()[:name]="say"{
+			if isstring(cvalue){
+				commandData()[:aExpr]+cvalue
+				commandData()[:nExpr]++
+				if commandData()[:nExpr]=4{
+								execute()
+				}
+			
+			}
+		}
+	
+	        func AddAttributes_say
+
+	                AddAttribute(self,:say)
+	
+	        func execute
+
+	                See  expr(4)+nl
