@@ -3,12 +3,16 @@
 load "odbclib.ring"
 
 oOdbc=odbc_init()
+
+// change data.mdb as your database file name	
 see odbc_connect(oOdbc,"DBQ=data.mdb;Driver={Microsoft Access Driver (*.mdb)}")
 see odbc_execute(oOdbc,"select * from customer where firstname='peter' ") + nl
 nMax = odbc_colcount(oOdbc)
 See "Columns Count : " + nMax + nl
 while odbc_fetch(oOdbc)
+	
         for x = 1 to nMax
+
                 see odbc_getdata(oODBC,x) + " - "
         next
 end
