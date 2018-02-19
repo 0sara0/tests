@@ -1,0 +1,40 @@
+#for and while statements
+#using  "next"
+
+for x = 1 to  5
+
+		see x + nl
+next
+
+
+#using "end" as "next"
+
+for x = 5  to 1  step  -1
+
+		see x + nl
+end
+
+#using "{}" to end as "next , end"
+
+for x = 1  to 5  step  1{
+
+		see x + nl
+}
+
+#using "end"
+
+x = 0
+while x< 5
+
+		see x + nl
+		x ++ 
+end
+
+
+#using "{}" to end 
+
+x = 0
+while x< 5{
+		see x + nl
+		x ++ 
+}
