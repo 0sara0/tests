@@ -1,0 +1,20 @@
+#table
+load "mysqllib.ring"
+con = MySQL_Init()
+see mysql_connect(con , 'localhost' , 'root' , 'root') + nl
+
+mysql_query(con , 'use ringmysql')
+mysql_query(con ,  "DROP TABLE IF EXISTS plan")
+mysql_query(con ,  "create TABLE plan(weak_ID int  , weak_name text , book_name text  ,  Specialization text , 
+total_pageCount int , author_name text , start_date date , end_date date , achievement text )")
+mysql_query(con , 'insert into plan values ( 3 , "October" , "A" , "CS" , 200 , "AS" , "2017-10-15" , " 2017-10-20" ,  "50" )')
+mysql_query(con , 'insert into plan values ( 4 , "October" , "B" , "CS" , 300 , "BS" , "2017-10-23 " , "2017-10-30 " ,  "30" )')
+mysql_query(con , 'insert into plan values ( 1 , "November" , "c" , "CS" , 2500  , "BS" , "2017-10-30 " , "2017-11-5 " ,  "20" )')
+mysql_query(con , 'insert into plan values ( 2 , "November" , "D" , null , null  , null , "2017-11-6 " , "2017-11-14 " ,  null )')
+mysql_query(con , 'insert into plan values ( 3 , "November" , "E" , null , null  , null , "2017-11-16 " , "2017-11-20 " ,  null )')
+mysql_query(con , 'insert into plan values ( 4 , "November" , "novel"  , null , null , null , "2017-11-25 " , "2017-11-29 " ,  null )')
+mysql_query(con , 'select * from plan')
+
+see mysql_result(con)
+see mysql_close(con) + nl
+
