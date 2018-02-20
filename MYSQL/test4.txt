@@ -1,0 +1,14 @@
+# show result of sql_statements without columns
+load "mysqllib.ring"
+con =  MySQL_Init()
+see mysql_connect(con , 'localhost' , 'root' , 'root') + nl
+mysql_query(con , 'use ringmysql')
+# we separate the statements by  ;  
+mysql_query(con , 'select name from characters where id = 3;' + 'select name from characters where id = 2')
+# show the result of first statement
+See mysql_result(con)
+# move to the next statement
+mysql_next_result(con)
+# show the result of second statement
+see mysql_result(con)
+see mysql_close(con) + nl
