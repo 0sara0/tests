@@ -1,0 +1,31 @@
+#commit and rollback
+load "mysqllib.ring"
+con  =  mysql_init()
+mysql_connect(con ,  "localhost" ,  "root" ,  "root" , "ringmysql")
+
+mysql_autocommit(con , False)
+
+mysql_query(con , "drop table if exists clients")
+
+if mysql_query(con , "create table if not exists clients(id int primary key auto_increment , first_name text , last_name text , phone int )")
+see mysql_error(con) ok
+
+if mysql_query(con , "insert into clients(first_name , last_name , phone) values('AHMED' , 'MOHAMMED' , 010101010)")
+see mysql_error(con) ok
+
+if mysql_query(con , "insert into clients(first_name , last_name , phone) values('Nora' , 'Ahmed' , 012308610)")
+see mysql_error(con) ok
+
+mysql_commit(con)
+
+if mysql_query(con , "insert into clients(first_name , last_name , phone) values('Amr' , 'Yousef' , 010978610)")
+see mysql_error(con) ok
+
+mysql_rollback(con)
+
+if mysql_query(con , "insert into clients(first_name , last_name , phone) values('Kareem' , 'Yousef' , 010978610)")
+see mysql_error(con) ok
+
+mysql_commit(con)
+
+mysql_close(con)
