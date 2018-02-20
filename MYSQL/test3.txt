@@ -1,0 +1,33 @@
+#auto increment id
+load "mysqllib.ring"
+
+con = MySQL_Init()
+see mysql_connect(con , 'localhost' , 'root' , 'root') + nl
+mysql_query(con , 'use ringmysql')
+
+if mysql_query(con , 'drop table if exists characters ')
+	mysql_error(con) 
+ok
+
+if mysql_query(con , "create table characters(id int primary key auto_increment  ,  name text)")
+	mysql_error(con) 
+ok
+
+if mysql_query(con , 'insert into characters(name) values ( "A" )')
+	mysql_error(con)
+ok
+
+if mysql_query(con , 'insert into characters(name) values ( "B" )')
+	mysql_error(con)
+ok
+
+if mysql_query(con , 'insert into characters(name) values ( "C" )')
+	mysql_error(con) 
+ok
+
+if mysql_query(con , 'insert into characters(name) values ( "D" )')
+	mysql_error(con) 
+ok
+
+see "inserted row id : "  +  mysql_insert_id(con)  +  nl
+see mysql_close(con) + nl
