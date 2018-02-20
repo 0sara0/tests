@@ -1,0 +1,5 @@
+load "mysqllib.ring"
+con=MySQL_Init()
+see mysql_connect(con,'127.0.0.1','root','root')+nl
+mysql_query(con,'create database RingMYSQLdb')
+mysql_close(con)
