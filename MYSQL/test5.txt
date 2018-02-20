@@ -1,0 +1,9 @@
+# show result of sql_statements with columns names in first ,  before values
+load "mysqllib.ring"
+con =  MySQL_Init()
+
+mysql_connect(con , 'localhost' , 'root' , 'root')+nl
+mysql_query(con , 'use ringmysql')
+mysql_query(con , 'select * from plan')
+# result2 show the columns elements  with values
+see mysql_result2(con)
