@@ -1,0 +1,19 @@
+aList = Replace ([1,2,3,4,5])
+see aList + nl
+
+see Return_list()
+
+func Replace list
+
+	list[1]="one"
+	list[2]="two"
+	list[3]="three"
+	list[4]="four"
+	list[5]="five"
+
+	return list
+
+func Return_list 
+
+	return [1,2,3,4,5]
+
