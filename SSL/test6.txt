@@ -1,0 +1,11 @@
+load "openssllib.ring"
+
+See "Enter the password : " give cStr
+
+cKey = "@#$%6dffhj&"  for x = 0 to 15 cKey += char(x) next  # any string
+cIV  = "123@344648"   for x = 1 to 8 cIV += char(x) next    # 8bytes
+
+cStr = Encrypt(cStr,cKey,cIV)
+
+? "Cipher Text    : " + cStr 
+? "Plain Text     : " + Decrypt(cStr,cKey,cIV) 
