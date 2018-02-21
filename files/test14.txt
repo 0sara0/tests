@@ -1,6 +1,6 @@
 fp = fopen("File.txt","r+")
 
-	see fexists("File.txt")+nl   #ÇáÎÑÌ íÓÇæí 1 Ãí ãæÌæÏ
+	see fexists("File.txt")+nl  
 	
 	see fputc(fp,"H")+nl
 	see fputc(fp,"e")+nl
