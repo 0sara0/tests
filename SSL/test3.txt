@@ -1,0 +1,4 @@
+Load "internetlib.ring"
+cStr = download("www.ring-lang.sf.net")
+see cStr
+write("ringSite.ring",cStr)
