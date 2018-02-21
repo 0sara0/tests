@@ -9,7 +9,7 @@ Func Main
 		div{
 			style=StyleSizeFull()+Stylebackcolor("#CEF6EC")+
 			StyleDivCenter("90%","90%")
-			h1{ text("Hello In Ring Language with Web Applications")
+			h1{ text("Web Applications by Ring Language ")
 			textalign="center"
 			}
 
@@ -17,7 +17,7 @@ Func Main
 				style=StyleMarginleft("650px")
 				name="reg"
 				action="response.ring"
-				method="get"
+				method="post"
 				table{
 	
 					style=Stylecolor("#0000FF") +StyleFontSize("24")+stylefloatleft()+StyleWidth("1%")
