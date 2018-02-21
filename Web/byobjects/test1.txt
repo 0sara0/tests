@@ -1,0 +1,23 @@
+#!c:\ring\bin\ring.exe -cgi
+Load "weblib.ring"
+Import System.Web
+Func Main
+
+	WebPage()
+	{
+		h1{
+			 text("Web Applications by Ring Language")
+			 textalign="center"
+		}
+		form{
+			name="reg"
+			action="response.ring"
+			method="get"
+			input{ type="username" name="UserName"}
+			input{ type="email" name="email"}
+			input{ type="tel" name="tel"}
+			input {type="password" name="password"}
+			input{ type="submit" name="submit" value="send "}
+		}
+	}
+	
