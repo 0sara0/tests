@@ -1,0 +1,44 @@
+#!c:\ring\bin\ring.exe -cgi
+Load "weblib.ring"
+Import System.Web
+Func Main
+
+	WebPage()
+	{
+		div{
+		
+			style = StyleSizeFull()+Stylebackcolor("#CEF6EC")+
+			StyleDivCenter("90%","90%")
+			h1{
+				 text("Hello In Web Applications by Ring Language")
+				 textalign = "center"
+			}
+		
+			form{
+				style = StyleMarginleft("650px")
+				name = "reg"
+				action = "response.ring"
+				method = "get"
+				div{
+			
+					style = Stylecolor("#0000FF") +StyleFontSize("24")+stylefloatleft()+StyleWidth("1%")
+					text("user Name")
+					text("Email")
+					text("Telephone")
+					text("password")
+					text("Submit")
+				}
+			
+				div{
+			
+					style =  stylewidth("1%")+stylefloatleft()+StyleMarginleft("20%")
+					input{ type = "username" name = "UserName" 	style = StyleSize("300px","30px") }
+					input{ type = "email" 	 name = "email" 	style = StyleSize("300px","30px") }
+					input{ type = "tel" 	 name = "tel" 		style = StyleSize("300px","30px")}
+					input{ type = "password" name = "password"	style = StyleSize("300px","30px")}
+					input{ type = "submit"	 name = "submit" 	style = StyleSize("300px","30px") }
+				}
+		
+			}
+		}
+	}
