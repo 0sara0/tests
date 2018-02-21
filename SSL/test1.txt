@@ -1,0 +1,11 @@
+Load "openssllib.ring"
+cStr = read("ring.exe")
+? "Size   : " + len(cStr) + nl
+
+? "md5 	  : " + md5(cStr)
+? "sha1   : " + sha1(cStr)
+? "sha256 : " + sha256(cStr) 
+? "sha224 : " + sha224(cStr) 
+? "sha384 : " + sha384(cStr) 
+? "sha512 : " + sha512(cStr)
+
