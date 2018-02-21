@@ -1,0 +1,26 @@
+Load "sqlitelib.ring"
+osqlite=sqlite_init()
+sqlite_open(osqlite,"dbFile")
+sqlite_execute(osqlite,"drop table if exists Persons")
+sql="create table Persons("  + "ID INT PRIMARY KEY NOT NULL," + "Name Text," + " Title Text);"
+if sqlite_execute(osqlite,sql)
+see sqlite_errmsg(osqlite)+nl ok
+sql= 
+
+" insert into Persons(ID,Name,Title)" +
+" values (1,'Ahmed','Emarat');" +
+" insert into Persons (ID,Name,Title)" +
+" values (2,'Mohamed','Saudia');"
+" insert into Persons(ID,Name,Title)" +
+" values (3,'omar','Egypt');" +
+" insert into Persons(ID,Name,Title)" +
+" values (4,'Aser','Egypt'); "
+
+if sqlite_execute(osqlite,sql)
+see sqlite_errmsg(osqlite)+nl ok
+see sqlite_execute(osqlite,"select Name from Persons where title='Egypt'")+nl
+all=sqlite_execute(osqlite,"select * from Persons")
+for x in all
+if x["Name"]='Mohamed' see "the Title of "+x["Name"]+ " is: "+ x["Title"]+nl ok
+next
+sqlite_close(osqlite)
