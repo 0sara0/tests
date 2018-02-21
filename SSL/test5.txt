@@ -6,5 +6,5 @@ list = 1:8   cIV  = ""   for x in list cIV += char(x) next    # 8bytes
 
 cStr = Encrypt(cStr,cKey,cIV)
 
-? "Cipher Text    : " + cStr +
-  "Plain Text     : " + Decrypt(cStr,cKey,cIV) 
+? "Cipher Text    : " + cStr 
+? "Plain Text     : " + Decrypt(cStr,cKey,cIV) 
