@@ -1,0 +1,14 @@
+#!c:\ring\bin\ring.exe -cgi
+#Author 	:Sara Hamdy
+#Date		:2018
+#Application	:image
+
+Load "weblib.ring"
+Import System.Web
+
+New Page
+{
+
+       image( [ :url = "images\thering.jpg" , :alt = :logo , :style = StyleDivCenter(250,200)+StyleMarginTop(50)  ] )
+
+}
